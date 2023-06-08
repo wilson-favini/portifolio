@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/5.3/examples/album/">
+    <link href="../assets/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css"
+        integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/style.css">
+
+
+    <style>
+        .bd-placeholder-img {
+            font-size: 1.125rem;
+            text-anchor: middle;
+            -webkit-user-select: none;
+            -moz-user-select: none;
+            user-select: none;
+        }
+
+        @media (min-width: 768px) {
+            .bd-placeholder-img-lg {
+                font-size: 3.5rem;
+            }
+        }
+    </style>
+
+    <title>wilson coxev</title>
+</head>
+
+<body>
+
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Atenção</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    Servidor não encontrado
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <header>
+
+        <div class="dimensao-menu">
+            <div class="nome">
+                <p>Wilson coxev</p>
+            </div>
+            <div class="nome-secoes">
+                <div class="botoes-menu" id="projetos">
+                    <p class="paragrafo1">Projetos</p>
+                </div>
+                <div class="botoes-menu" id="sobre">
+                    <p class="paragrafo1">sobre</p>
+                </div>
+            </div>
+
+        </div>
+    </header>
+
+    <main>
+
+        <div class="indroduce-myself">
+            <div class="container1">
+                <div class="imagem">
+                    <img src="/img/wilson1.jpg" alt="wilson">
+                </div>
+                <div class="titulo">
+                    <div class="nomeTitulo">
+                        <h1>Wilson coxev favini</h1>
+                    </div>
+                    <div class="descricao">
+                        <h6>Desenvolvedor Front End</h6>
+                    </div>
+                </div>
+            </div>
+
+            <hr>
+
+            <div class="artigo">
+
+                <div class="texto">
+                    <p>
+                        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Natus neque quae consequatur quas
+                        distinctio perferendis dolore! Blanditiis, aspernatur fugiat? Tenetur, nam voluptas impedit quae
+                        fugit error maiores praesentium vero a.
+                    </p>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Non aliquid fuga magni aperiam? Non
+                        saepe quo aspernatur nam labore a quaerat explicabo minima cumque ullam perferendis, voluptate
+                        eligendi amet! Reprehenderit.
+                    </p>
+                    
+                </div>
+                <div class="redes-sociais">
+                    <a href="https://www.facebook.com/profile.php?id=100004658929148&mibextid=ZbWKwL"><img
+                            src="/img/facebook.png" width="32px" height="32px" alt=""></a>
+                    <a href="https://www.instagram.com/Wilsonfavini/"><img src="/img/instagram.png" width="32px"
+                            height="32px" alt=""></a>
+                    <a href="https://www.linkedin.com/in/wilson-favini-532856116/"><img src="/img/linkedin.png"
+                            width="32px" height="32px" alt=""></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="album py-5 bg-body-tertiary">
+            <div class="container">
+
+                <div class="input-group mb-3 inputPesquisa">
+                    <input type="text" id="buscar" class="form-control" placeholder="Buscar Projeto"
+                        aria-label="Recipient's username" aria-describedby="button-addon2">
+                    <button class="btn botaoPesquisar" type="button" id="button-addon2">Pesquisar</button>
+                </div>
+
+                <h3>Projetos</h3>
+
+                <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="/img/projeto1.png" alt="tecnologias">
+                            <div class="card-body">
+                                <strong class="tituloProjeto">Chat Online</strong>
+                                <p class="card-text">
+                                    Este projeto foi desenvolvido para troca de mensagens em tempo Real.
+                                    As tecnologias de desenvolvimento que foram utilizadas é a linguagem de marcação
+                                    HTML, CSS para estilos(framework Bootestrap), e a linguagem de programação
+                                    Javascript. o BackEnd Foi desenvolvido com node.js.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group modal-footer">
+                                        <a href="https://github.com/wilson-favini/chatOnline" target="_blank"><button
+                                                type="button" class="btn btn-sm btn-outline-primary">
+                                                Código
+                                            </button></a>
+
+                                        <button type="button" class="btn btn-sm btn-outline-success"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            Ver Projeto
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="/img/projeto1.png" alt="tecnologias">
+                            <div class="card-body">
+                                <strong class="tituloProjeto">teste1</strong>
+                                <p class="card-text">
+                                    Este projeto foi desenvolvido para troca de mensagens em tempo Real.
+                                    As tecnologias de desenvolvimento que foram utilizadas é a linguagem de marcação
+                                    HTML, CSS para estilos(framework Bootestrap), e a linguagem de programação
+                                    Javascript. o BackEnd Foi desenvolvido com node.js.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group modal-footer">
+                                        <a href="https://github.com/wilson-favini/chatOnline" target="_blank"><button
+                                                type="button" class="btn btn-sm btn-outline-primary">
+                                                Código
+                                            </button></a>
+
+                                        <button type="button" class="btn btn-sm btn-outline-success"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            Ver Projeto
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col">
+                        <div class="card shadow-sm">
+                            <img src="/img/projeto1.png" alt="tecnologias">
+                            <div class="card-body">
+                                <strong class="tituloProjeto">teste2</strong>
+                                <p class="card-text">
+                                    Este projeto foi desenvolvido para troca de mensagens em tempo Real.
+                                    As tecnologias de desenvolvimento que foram utilizadas é a linguagem de marcação
+                                    HTML, CSS para estilos(framework Bootestrap), e a linguagem de programação
+                                    Javascript. o BackEnd Foi desenvolvido com node.js.
+                                </p>
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <div class="btn-group modal-footer">
+                                        <a href="https://github.com/wilson-favini/chatOnline" target="_blank"><button
+                                                type="button" class="btn btn-sm btn-outline-primary">
+                                                Código
+                                            </button></a>
+
+                                        <button type="button" class="btn btn-sm btn-outline-success"
+                                            data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                            Ver Projeto
+                                        </button>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <footer class="rodape">
+
+        teste
+
+    </footer>
+
+    <script src="../assets/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="/js/script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
+        integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
+        integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
