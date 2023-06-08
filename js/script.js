@@ -34,13 +34,23 @@ function pesquisar () {
     input = input.toLowerCase();
     let titulo = document.getElementsByClassName("tituloProjeto");
     let boxProjeto = document.getElementsByClassName("col");
+    let boxInfo = document.querySelector(".resultado-falso");
+    let verificar = false;
 
     for (let i=0; i < titulo.length; i++) {
         if (!titulo[i].innerHTML.toLowerCase().includes(input)) {
             boxProjeto[i].style.display = "none";
+            verificar = true;
         } else {
             boxProjeto[i].style.display = "flex";
+            verificar = false;
         }
+    }
+
+    if (verificar) {
+        boxInfo.style.display = "flex";
+    } else {
+        boxInfo.style.display = "none";
     }
 
     
