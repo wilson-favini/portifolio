@@ -3,9 +3,6 @@
     font-family: Helvetica, sans-serif;
     box-sizing: border-box;
 }
-body {
-    height: 100vh;
-}
 
 header {
     background-color: #051933;
@@ -40,8 +37,14 @@ header {
     display: inherit;
 }
 
+.nome p, .botoes-menu p {
+    margin: 0;
+}
 .nome {
     width: 30%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .nome-secoes {
@@ -64,6 +67,8 @@ header {
 main {
     /*min-height: 100vh;*/
     width: 100%;
+    display: block;
+    min-height: 90vh;
 }
 
 .indroduce-myself {
@@ -137,15 +142,19 @@ main {
 /*tecnologias logo*/
 .secaoTec {
     display: block;
-    background-color: rgb(255, 255, 255);
+    margin: auto;
+    margin-top: 12vh;
+    margin-bottom: 6vh;
+    max-width: 800px;
 }
 
 .box {
-    width: 90%;
     height: 100%;
     display: flex;
     margin: auto;
+    flex-wrap: wrap;
 }
+
     .tecnologia {
         width: 100%;
         display: inherit;
@@ -153,10 +162,9 @@ main {
         flex-direction: column;
         border: 1px solid #ccc;
         border-radius: 5px;
-        min-width: 115px;
-        max-width: 100%;
+        max-width: 150px;
         padding: 5px;
-        margin: 3px;
+        margin: 5px;
     }
     .tecnologia:hover {
         background-color: #b7d7ff;
@@ -175,6 +183,7 @@ main {
     background-color: #093366;
     color: #fff;
     margin: 0;
+    padding: 10px;
 }
 
 /* seção do resultado que não foi encontrado */

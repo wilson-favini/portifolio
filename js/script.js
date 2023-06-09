@@ -38,7 +38,6 @@ function pesquisar () {
             boxProjeto[i].style.display = "flex";
             resultadosEncontrados = true;
         }
-        
     }
 
     if (resultadosEncontrados) {
