@@ -134,6 +134,34 @@ main {
     transform: scale(1.1);
 }
 
+/*tecnologias logo*/
+.secaoTec {
+    display: block;
+    background-color: rgb(255, 255, 255);
+}
+
+.box {
+    width: 90%;
+    height: 100%;
+    display: flex;
+    margin: auto;
+}
+    .tecnologia {
+        width: 100%;
+        display: inherit;
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        min-width: 115px;
+        max-width: 100%;
+        padding: 5px;
+        margin: 3px;
+    }
+    .tecnologia:hover {
+        background-color: #b7d7ff;
+        transition: .3s;
+    }
 
 .album {
     display: none;
@@ -152,7 +180,8 @@ main {
 /* seção do resultado que não foi encontrado */
 .resultado-falso {
    display: none;
-   margin: auto;
+   margin-top: 10vh;
    align-items: center;
    justify-content: center;
+   flex-direction: column;
 }

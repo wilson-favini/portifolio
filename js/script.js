@@ -1,16 +1,11 @@
 let displayIndroduceMyself = document.querySelector(".indroduce-myself");
 let displayAlbum = document.querySelector(".album");
+let displayTecnologia = document.querySelector(".secaoTec");
 
 function introduceMyself () {
     displayIndroduceMyself.style.display = "block";
         displayAlbum.style.display = "none";
-    /*
-    if (displayIndroduceMyself.style.display === "block") {
-        displayIndroduceMyself.style.display = "block";
-        displayAlbum.style.display = "none";
-    }
-    */
-
+        displayTecnologia.style.display = "block";
 }
 let sobre = document.getElementById("sobre");
 sobre.addEventListener("click", introduceMyself);
@@ -18,15 +13,10 @@ sobre.addEventListener("click", introduceMyself);
 function album () {
     displayAlbum.style.display = "block";
         displayIndroduceMyself.style.display = "none";
-        /*
-    if (displayAlbum.style.display === "none") {
-        displayAlbum.style.display = "block";
-        displayIndroduceMyself.style.display = "none";
-    }
-    */
+        displayTecnologia.style.display = "none";
 }
 let projetos = document.getElementById("projetos");
-projetos.addEventListener("click", album)
+projetos.addEventListener("click", album);
 
 /* Input Pesquisar */
 function pesquisar () {
@@ -36,20 +26,27 @@ function pesquisar () {
     let aux = [];
     let boxProjeto = document.getElementsByClassName("col");
     let boxInfo = document.querySelector(".resultado-falso");
+    let resultadosEncontrados = false;
+    let projetosResultado = document.querySelector(".projetos-reultado");
 
     for (let i=0; i < titulo.length; i++) {
-        aux[i] = titulo[i].value;
-        if (!titulo[i].innerHTML.toLowerCase().includes(input)) {
+        aux[i] = titulo[i].innerHTML.toLowerCase();
+        if (!aux[i].includes(input)) {
             boxProjeto[i].style.display = "none";
-            boxInfo.style.display = "flex";
             
         } else {
             boxProjeto[i].style.display = "flex";
-            boxInfo.style.display = "none";
-            
+            resultadosEncontrados = true;
         }
-        console.log("Posição do i: " + (i) + "; display: " + boxInfo.style.display);
-        console.log("; título: " + (aux[i])+ titulo[i]);
+        
+    }
+
+    if (resultadosEncontrados) {
+        boxInfo.style.display = "none";
+    } else {
+        boxInfo.style.display = "flex";
+        projetosResultado.innerHTML = "Resultado:";
+        console.log(projetosResultado);
     }
 }
 
