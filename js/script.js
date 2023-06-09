@@ -33,27 +33,24 @@ function pesquisar () {
     let input = document.getElementById("buscar").value;
     input = input.toLowerCase();
     let titulo = document.getElementsByClassName("tituloProjeto");
+    let aux = [];
     let boxProjeto = document.getElementsByClassName("col");
     let boxInfo = document.querySelector(".resultado-falso");
-    let verificar = false;
 
     for (let i=0; i < titulo.length; i++) {
+        aux[i] = titulo[i].value;
         if (!titulo[i].innerHTML.toLowerCase().includes(input)) {
             boxProjeto[i].style.display = "none";
-            verificar = true;
+            boxInfo.style.display = "flex";
+            
         } else {
             boxProjeto[i].style.display = "flex";
-            verificar = false;
+            boxInfo.style.display = "none";
+            
         }
+        console.log("Posição do i: " + (i) + "; display: " + boxInfo.style.display);
+        console.log("; título: " + (aux[i])+ titulo[i]);
     }
-
-    if (verificar) {
-        boxInfo.style.display = "flex";
-    } else {
-        boxInfo.style.display = "none";
-    }
-
-    
 }
 
 let btnPesquisar = document.getElementById("button-addon2");
