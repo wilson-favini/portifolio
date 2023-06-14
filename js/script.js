@@ -7,16 +7,14 @@ function introduceMyself () {
         displayAlbum.style.display = "none";
         displayTecnologia.style.display = "block";
 }
-let sobre = document.getElementById("sobre");
-sobre.addEventListener("click", introduceMyself);
+//document.getElementsByClassName("sobre").addEventListener("click", introduceMyself);
 
 function album () {
     displayAlbum.style.display = "block";
         displayIndroduceMyself.style.display = "none";
         displayTecnologia.style.display = "none";
 }
-let projetos = document.getElementById("projetos");
-projetos.addEventListener("click", album);
+//document.getElementsByClassName("projetos").addEventListener("click", album);
 
 /* Input Pesquisar */
 function pesquisar () {
